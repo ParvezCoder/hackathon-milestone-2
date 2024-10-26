@@ -7,7 +7,7 @@ body, html {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 24px;
   background-color: #000;
@@ -19,6 +19,15 @@ body, html {
 /* Section Titles */
 .section-title {
   font-size: 1.875rem;
+  color: #2b6cb0;
+  font-weight: bold;
+  border-bottom: 2px solid #3182ce;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  
+}
+.section-title2 {
+  font-size: 1.7rem;
   color: #2b6cb0;
   font-weight: bold;
   border-bottom: 2px solid #3182ce;
@@ -97,9 +106,38 @@ body, html {
 /* Footer */
 .footer {
   text-align: center;
-  margin-top: 16px;
+  margin-top: 60px;
 }
 
 .text-center {
-  margin-top: 8px;
+  margin-top: 15px;
+}
+.personal-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .personal-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-top: 8px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
 }
